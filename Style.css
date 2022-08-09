@@ -548,6 +548,7 @@ img {
 	}
 	.contact-form {
 		padding: 35px 40px;
+		flex-direction: column;
 	}
 }
 .scrollToTop-btn {
