@@ -1,4 +1,14 @@
 window.addEventListener('DOMContentLoaded', function () {
+	const loader = document.querySelector('.loader');
+	const bodyLoader = document.querySelector('.body');
+	setTimeout(() => {
+		loader.style.opacity = '0';
+		bodyLoader.style.display = 'block';
+		setTimeout(() => {
+			loader.style.display = 'none';
+		}, 500);
+	}, 2000);
+
 	window.addEventListener('scroll', function () {
 		const header = document.querySelector('header');
 		header.classList.toggle('sticky', window.scrollY > 0);
