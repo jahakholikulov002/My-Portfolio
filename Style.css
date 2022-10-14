@@ -78,6 +78,7 @@ header .brand {
 }
 header .navigation {
 	position: relative;
+	
 }
 header .navigation a {
 	color: #fff;
@@ -306,20 +307,28 @@ img {
 	background-color: #e45126;
 }
 .skills .css::before {
-	width: 85%;
+	width: 90%;
 	background-color: #0c73b8;
 }
 .skills .sass::before {
-	width: 80%;
+	width: 90%;
 	background-color: #30dd6d;
 }
 .skills .bootstrap::before {
-	width: 60%;
+	width: 85%;
 	background-color: #6d7eb8;
 }
 .skills .javascript::before {
-	width: 50%;
+	width: 85%;
 	background-color: #e3a324;
+}
+.skills .vue-js::before {
+	width: 80%;
+	background-color: rgb(58, 129, 25);
+}
+.skills .one-c::before {
+	width: 76%;
+	background-color: #e68e09;
 }
 
 .services .content {
@@ -394,7 +403,7 @@ img {
 	transition: 0.5s ease;
 }
 .work .content .card-image img:hover {
-	transform: scale(1.2);
+	transform: scale(1.05);
 }
 .contact .content {
 	display: flex;
@@ -515,7 +524,7 @@ img {
 	header .navigation.active {
 		z-index: 888;
 		position: fixed;
-		background: #fff;
+		background: #000025;
 		top: 0;
 		right: 0;
 		width: 380px;
@@ -526,9 +535,10 @@ img {
 		flex-direction: column;
 		box-shadow: 0 5px 25px rgba(1 1 1 /15%);
 		transition: 0.3s ease;
+		border-radius: 20px 0 0 20px;
 	}
 	header .navigation a {
-		color: #000;
+		color: rgb(255, 255, 255);
 		font-size: 22px;
 		margin: 10px;
 		padding: 0 20px;
@@ -539,6 +549,7 @@ img {
 		color: #fff;
 	}
 	.menu-btn {
+		
 		position: absolute;
 		background: url(./Images/menu.png) no-repeat;
 		background-size: 30px;
@@ -551,12 +562,18 @@ img {
 		transition: 0.4s ease;
 	}
 	.menu-btn.active {
+		border-radius: 12%;
 		z-index: 999;
 		background: url(./Images/close.png) no-repeat;
 		background-size: 25px;
 		background-position: center;
-		transition: 0.3s ease;
+		transition: 0.2s ease;
 		filter: invert(1);
+		background-color:black ;
+	}
+	.menu-btn.active:hover{
+		transform: scale(1.05);
+		color: #fff;
 	}
 	section {
 		padding: 80px 20px;
